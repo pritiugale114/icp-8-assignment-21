@@ -1,54 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>receipt</title>
     <style>
-        body{
+        body {
             background-color: rgb(246, 226, 199);
         }
-        .receipt-container{
+
+        .receipt-container {
             width: 80%;
             border: 1px solid gray;
             margin: 0 auto;
             background-color: #fff;
             padding: 10px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        .brand-logo{
+        .receipt-header{
+            border-bottom: dotted;
+        }
+
+        .brand-logo {
             width: 100px;
             display: block;
             margin: 0 auto;
         }
-        .brand-title{
+
+        .brand-title {
             text-align: center;
         }
-        .brand-address{
+
+        .brand-address {
             text-align: right;
         }
+        .receipt-title{
+            text-align: center;
+            font-size: 30px;
+            margin:40px 0;
+        }
+        .Reciept-details{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .receipt-body{
+            position: relative;
+        }
+        .Reciept-key{
+          color: gray;
+          width: 30%;
+        }
+        .Reciept-value{
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
 
-
+        }
+        .Accountant-Signature{
+            text-align: right;
+            margin-top:50px ;
+        }
+        .stamp{
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+            
+           
+        }
     </style>
 </head>
+
 <body>
-<div class="receipt-container">
-   <div class="receipt-header">
-    <img class="brand-logo" src="/logo.png">
-    <h2 class="brand-title">Road To Code</h2>
-    <p class="brand-address">404, above lotus hospital,<br>
-    shewalewadi ,<br>
-    pune-412307.</p>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <img class="brand-logo" src="/logo.png">
+            <h2 class="brand-title">Road To Code</h2>
+            <p class="brand-address">404, above lotus hospital,<br>
+                shewalewadi ,<br>
+                pune-412307.</p>
+                <p class="brand-address">+91 9623920537</p>
 
-   </div>
-   <div class="receipt-body">
-    
-   </div>
-   <div class="receipt-footer">
-    
-   </div>
+        </div>
+       
+        <div class="receipt-body">
+            <p class="receipt-title">Payment Reciept</p>
+            
+            <div class="Reciept-details">
+                <div class="Reciept-key">
+                   Reciept No. :
+                </div>
+                <div class="Reciept-value">
+                    114777
+                </div>
+            </div>
+                <div class="Reciept-details">
+                    <div class="Reciept-key">
+                       Payment Date :
+                    </div>
+                    <div class="Reciept-value">
+                        2 march 2024
+                    </div>
+                </div>
+                    <div class="Reciept-details">
+                        <div class="Reciept-key">
+                           Amount :
+                        </div>
+                        <div class="Reciept-value">
+                            4000/-
+                        </div>
+                    </div>
+                        <div class="Reciept-details">
+                            <div class="Reciept-key">
+                               Payment Mode:
+                            </div>
+                            <div class="Reciept-value">
+                               Cash
+                            </div>
+                    </div>
+                    <br>
+                    <br><br>
+                    <br><br>
+                    <br>
+            <img class="stamp" src="/stamp1.png">
+            <p class="Accountant-Signature"> Accountant Signature</p>
+            </div>
 
-</div>
+        </div>
+       
+        <div class="receipt-footer">
+
+        </div>
+
+    </div>
 </body>
+
 </html>
