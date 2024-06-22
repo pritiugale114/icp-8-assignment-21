@@ -5,80 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>receipt</title>
-    <style>
-        body {
-            font-weight: bold;
-            background-color: rgb(246, 226, 199);
-        }
-
-        .receipt-container {
-            width: 80%;
-            border: 1px solid gray;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .receipt-header{
-            border-bottom: dotted;
-        }
-
-        .brand-logo {
-            width: 100px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .brand-title {
-            text-align: center;
-        }
-
-        .brand-address {
-            text-align: right;
-        }
-        .receipt-title{
-            text-align: center;
-            font-size: 30px;
-            margin:40px 0;
-        }
-        .Reciept-details{
-            display: flex;
-            justify-content: space-around;
-            font-size: 20px;
-            margin: 20px 0;
-        }
-        .receipt-body{
-            position: relative;
-            border-bottom: 1px dashed gray;
-        }
-        .Reciept-key{
-          color: gray;
-          width: 30%;
-        }
-        .Reciept-value{
-            font-weight: bold;
-            border-bottom: 1px dashed gray;
-            width: 30%;
-
-        }
-        .Accountant-Signature{
-            text-align: right;
-            margin-top:50px ;
-        }
-        .stamp{
-            width: 200px;
-            position: absolute;
-            right: 0;
-            bottom: 20px;
-        }
-        .receipt-footer{
-    text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
-    background-color: #ffca39;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -131,11 +58,13 @@
                     <br>
                     <br><br>
                     <br>
+            <div class="sign-item">
             <img class="stamp" src="/stamp1.png">
             <p class="Accountant-Signature"> Accountant Signature</p>
+        </div>
             <br><br><br>
         </div>
-        <p>this is a computer generated Reciept and does not require any Signature</p>
+        <p class="text"> this a computer generated Reciept and does not require any Signature</p>
          
         <div class="receipt-footer">
          <p> Thank you for your payment.</p>
